@@ -5,6 +5,7 @@ const config: ModuleFederationConfig = {
   exposes: {
     './Routes': 'apps/todo/src/app/remote-entry/entry.routes.ts',
   },
+  additionalShared: ['primeng']
 };
 
 export default config;
